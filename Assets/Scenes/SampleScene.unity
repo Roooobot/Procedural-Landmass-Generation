@@ -185,9 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2957207324bacac4b9fa27cd45932377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ninja: {fileID: 2800000, guid: d97d1301f601eaa41beb11385dc3c3d6, type: 3}
-  Ninja2: {fileID: 2800000, guid: 7e08355b2f392f44089c944f5f7bb587, type: 3}
-  Adventure: {fileID: 2800000, guid: 03e595fec8cec9e419472f1d548cdb43, type: 3}
+  partyData: {fileID: 11400000, guid: 9b3d28db69f95b74f9619fbdc97c1c8b, type: 2}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

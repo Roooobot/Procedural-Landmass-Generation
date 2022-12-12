@@ -4,11 +4,6 @@
         <ui:VisualElement name="TitleContainer" style="height: 10%; margin-bottom: 1%;">
             <ui:Label text="PARTY DATA" display-tooltip-when-elided="true" name="TitleLabel" style="-unity-font-style: italic; font-size: 100px; margin-bottom: 0; -unity-text-outline-color: rgb(0, 0, 0); color: rgb(0, 0, 0); padding-left: 0; padding-right: 0; -unity-text-align: middle-left; text-shadow: 0 0 0 rgb(0, 0, 0);" />
         </ui:VisualElement>
-        <ui:VisualElement name="BodyContainer" style="flex-grow: 1; flex-direction: row; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; -unity-text-align: middle-left;">
-            <CharacterDatapanel style="flex-basis: 25%;" />
-            <CharacterDatapanel style="flex-basis: 25%;" />
-            <CharacterDatapanel style="flex-basis: 25%;" />
-            <CharacterDatapanel style="flex-basis: 25%;" />
-        </ui:VisualElement>
+        <ui:VisualElement name="BodyContainer" style="flex-grow: 1; flex-direction: row; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; -unity-text-align: middle-left;" />
     </ui:VisualElement>
 </ui:UXML>

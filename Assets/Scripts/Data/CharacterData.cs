@@ -7,10 +7,27 @@ public class CharacterData : ScriptableObject
 {
     [SerializeField] Texture2D characterAvataImage;
     [SerializeField] string characterName;
-    [SerializeField] int characterStartLevel = 1;
+    [SerializeField,Range(1,characterMaxLevel)] int characterStartLevel = 1;
     [SerializeField] CharacterStats characterStats;
-    public Texture2D CharacterAvatarImage => CharacterAvatarImage;
+
+    int characterLevel;
+    const int characterMaxLevel = 10;
+
+    public Texture2D CharacterAvatarImage => characterAvataImage;
     public string CharacterName => characterName;
-    public int CharacterStartLevel => characterStartLevel;
+    public int CharacterLevel
+    {
+        get => characterLevel;
+        set
+        {
+            if (characterLevel == value || value is < 1 or > characterMaxLevel) return;
+            characterLevel = value;
+        }
+    }
     public CharacterStats CharacterStats => characterStats;
+
+    private void OnEnable()
+    {
+        characterLevel = characterStartLevel;
+    }
 }
